@@ -1,0 +1,36 @@
+@media screen and (min-width: 576px) {
+
+}
+
+@media screen and (min-width: 768px) {
+  /* تابلت */
+}
+
+@media screen and (min-width: 992px) {
+  /* لابتوب صغير */
+}
+
+@media screen and (min-width: 1200px) {
+  /* شاشات كبيرة */
+ 
+  header .container{
+    height: 100vh;
+  }
+  footer .container {
+  flex-direction: row;
+}
+.w-lg-75{
+  width: 75%;
+}
+
+.shape-2 {
+  top: 5%;
+}
+
+}
+
+@media screen and (min-width: 1400px) {
+  /* شاشات ضخمة */
+
+}
+
