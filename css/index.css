@@ -211,7 +211,9 @@ div img{
     100% { width: 100%; }
 }
 
-
+.navbar-toggler { 
+    border: none;  
+}
 
 /* ------------------------------------------------------------------------------------ */
 
@@ -704,16 +706,6 @@ footer i.fa-square{
   transition:transform 0.4s ;
 
   
-}
-
-
-.All-rights-reserved {
-  border-top: 1px rgb(190,194,200) solid;
-  padding-top: 0px;
-  color: rgb(190,194,200);
-  background-color: black;
-  padding-block: 30px;
-  margin-top: 30px;
 }
 
 /* --------------------------------------------------- bottons ------------------------------------------- */
