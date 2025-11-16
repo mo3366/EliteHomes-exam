@@ -20,7 +20,7 @@ h1,h2,h3,h4,h5,h6 ,p{
   --black-color:rgb(0,0,0);
   --secound-color:rgb(74,85,101);
   --three-color:rgb(237,233,254);
-  --light-font: lighter;
+  --light-font: normal;
 }
 .color-2{
    color: var( --secound-color) !important;
@@ -64,16 +64,17 @@ div img{
 }
 .w-60px{
   width: 60px;
+  height: fit-content;
 }
+
 /* --------------------dropdowen------------------- */
 .position-drop-dowen 
 {
-  left:15% !important;
-  right:10% !important;
-
+  left:0 !important;
+  right:0 !important;
      box-shadow: 0px 2px 20px rgb(192, 192, 192);
-
 }
+
 .hover-drop-dowen:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
@@ -153,6 +154,8 @@ div img{
 }
 
 
+
+
 /* --------------------------------------------- */ 
 
 
@@ -214,6 +217,59 @@ div img{
 .navbar-toggler { 
     border: none;  
 }
+
+/* إلغاء البوردر والمربع الأسود */
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* 3 خطوط الهامبرجر */
+.navbar-toggler-icon {
+  background-image: none !important;
+  width: 26px;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 26px;
+  height: 2px;
+  background-color: #000;
+  transition: 0.3s;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+/* عند فتح المينيو — تتحول لـ X */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
 
 /* ------------------------------------------------------------------------------------ */
 
